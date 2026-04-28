@@ -1,2 +1,2 @@
 # Projeto Imobiliaria Santos
- Projeto de uma pagia de Imobiliaria
+ Projeto de uma pagina web da Imobiliaria
