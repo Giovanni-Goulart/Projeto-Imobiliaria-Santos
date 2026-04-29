@@ -2,6 +2,7 @@
 
 Projeto de site institucional para uma imobiliária, desenvolvido com foco em **design moderno, responsividade e boa experiência do usuário (UX/UI)**.
 
+[Acessar o site](https://giovanni-goulart.github.io/Projeto-Imobiliaria-Santos/)
 ---
 
 ## 📌 Sobre o projeto
