@@ -1,143 +1,211 @@
-
+/* ===== RESET BÁSICO ===== */
+/* Remove margens padrão e melhora renderização */
 body {
     margin: 0;
-    font-family: Tahoma;
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+    background-color: #f5f7fa; /* Fundo leve */
 }
 
-/* === Estilos globais === */
+/* ===== CONTAINER PADRÃO ===== */
 .secao {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 60px 20px; /* Mais respiro lateral */
 }
 
+/* ===== PARÁGRAFOS ===== */
 .paragrafo {
     font-size: 18px;
     text-align: justify;
     line-height: 28px;
-    margin: 10px auto;
-    width: 980px;
+    margin: 20px auto;
+    max-width: 900px; /* RESPONSIVO (substitui width fixo) */
 }
 
-/* ===  1ª seção === */
+/* ===== TOPO ===== */
 .topo {
-    background-color: #afddfb;
+    background: linear-gradient(90deg, #afddfb, #1d80c1); /* Gradiente moderno */
+    padding: 20px 0;
 }
 
+/* Logo */
 .topo img {
-    width: 150px;
+    width: 140px;
 }
 
+/* Menu */
 .paragrafo-topo {
     text-align: center;
     margin-top: 15px;
-    margin-bottom: 25px;
 }
 
+/* Links do menu */
 .link-topo {
-    color: #1d1d1d;
+    color: #ffffff;
     font-size: 18px;
     text-decoration: none;
-    margin: 0 10px;
-    border-bottom: 2px solid #1d1d1d;
+    margin: 0 15px;
+    padding-bottom: 5px;
+    transition: 0.3s;
 }
 
-/* ===  2ª seção === */
+/* Efeito hover */
+.link-topo:hover {
+    border-bottom: 2px solid #fff;
+}
 
+/* ===== BANNER ===== */
 .banner {
-    padding-top: 0;
-    margin-top: 50px;
+    padding: 0;
+    margin-top: 0;
 }
 
-/* ===  estilos para destaques === */
-
-span {
-    font-weight: bold;
+.banner img {
+    width: 100%;
+    height: auto;
 }
 
-/* ===  3ª seção === */
-
+/* ===== TIPOGRAFIA ===== */
 h1 {
     color: #1d1d1d;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 32px;
 }
 
 h2 {
-    font-weight: normal;
+    font-weight: 400;
     color: #1c81c0;
     margin-top: 0;
 }
 
+/* Imagens */
 .imagem {
-    width: 450px;
+    width: 100%;
+    max-width: 450px; /* Responsivo */
+    border-radius: 10px; /* Estética moderna */
 }
 
+/* Destaque azul */
 .texto-azul {
     color: #1d80c1;
 }
 
-/* ===  4ª seção === */
-
-.servicos, .contato {
+/* ===== SERVIÇOS ===== */
+.servicos, 
+.contato {
     background-color: #1d80c1;
 }
 
+/* Títulos */
 h3 {
     color: #ffffff;
     font-size: 28px;
-    line-height: 42px;
 }
 
+/* Texto serviços */
 .paragrafo-servicos {
     color: #ffffff;
-    line-height: 42px;
-    width: 700px;
-    font-size: 22px;
-    text-align: center;
+    line-height: 32px;
+    max-width: 700px;
+    font-size: 20px;
+    margin: 0 auto;
 }
 
+/* Destaque amarelo */
 .texto-amarelo {
     color: #fff81b;
 }
 
+/* Lista */
 .lista-servicos {
-    width: 135px;
-    margin: 40px auto 40px;
-   
+    width: 200px;
+    margin: 30px auto;
 }
 
+/* Itens */
 .item-lista-servicos {
-    font-size: 22px;
-    line-height: 42px;
+    font-size: 20px;
+    line-height: 36px;
     text-align: left;
     color: #fff;
 }
 
-/* ===  6ª seção === */
+/* ===== CONTATO ===== */
 
+/* Caixa de destaque */
 .paragrafo-contato {
-    color: #fff;
-    background-color: #1d1d1d;
-    padding: 15px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    .paragrafo-contato {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+    
+    /* CENTRALIZAÇÃO */
+    margin: 30px auto; /* centraliza horizontalmente */
+    max-width: 700px; /* limita largura */
+
+    text-align: center; /* centraliza o texto dentro */
+
+    border-radius: 8px; /* opcional - deixa moderno */
 }
 
+/* Lista */
 .lista-contato {
-    width: 210px;
+    width: 250px;
     list-style: none;
-    margin: 40px auto 40px;
+    margin: 30px auto;
+    padding: 0;
 }
 
-.item-lista-contato {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 18px;
-}
-
+/* Links */
 .link-contato {
+    display: block;
     background-color: #ffffff;
     color: #1d80c1;
-    padding: 2px 5px;
-    border-radius: 5px;
+    padding: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+/* Hover elegante */
+.link-contato:hover {
+    background-color: #e6f2ff;
+    transform: scale(1.05);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .paragrafo {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .paragrafo-servicos {
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .link-topo {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .topo img {
+        width: 120px;
+    }
+
+    .imagem {
+        width: 100%;
+    }
 }
